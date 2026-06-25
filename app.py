@@ -80,11 +80,12 @@ st.markdown("""
         align-items: center;
         gap: 0.5rem;
         padding: 0.5rem 1rem;
-        background: rgba(255, 255, 255, 0.15);
+        background: rgba(30, 58, 138, 0.1);
         border-radius: 8px;
         font-size: 0.85rem;
         font-weight: 500;
         margin-top: 1rem;
+        color: #1e3a8a;
     }
     
     .status-dot {
@@ -109,7 +110,7 @@ st.markdown("""
     
     .user-message .stChatMessage {
         max-width: 85%;
-        background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+        background: linear-gradient(135deg, #2563eb 0%, #60a5fa 100%);
         color: white;
     }
     
@@ -121,9 +122,33 @@ st.markdown("""
     
     .assistant-message .stChatMessage {
         max-width: 95%;
-        background: white;
-        border: 1px solid var(--border);
+        background: #ffffff;
+        border: 1px solid #e5e7eb;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        color: #1f2937;
+    }
+    
+    .assistant-message .stChatMessage p {
+        color: #1f2937 !important;
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+    }
+    
+    .assistant-message .stChatMessage strong {
+        color: #1e3a8a !important;
+        font-weight: 700 !important;
+    }
+    
+    .assistant-message .stChatMessage li {
+        color: #1f2937 !important;
+        font-size: 0.95rem !important;
+    }
+    
+    .assistant-message .stChatMessage h1,
+    .assistant-message .stChatMessage h2,
+    .assistant-message .stChatMessage h3 {
+        color: #1e3a8a !important;
+        font-weight: 700 !important;
     }
     
     .stChatMessage {
@@ -132,6 +157,28 @@ st.markdown("""
         transition: all 0.3s ease;
         word-wrap: break-word;
         overflow-wrap: break-word;
+        color: #1f2937 !important;
+    }
+    
+    .stChatMessage * {
+        color: #1f2937 !important;
+    }
+    
+    .stChatMessage p {
+        color: #1f2937 !important;
+        font-size: 0.95rem !important;
+    }
+    
+    .stChatMessage ul, .stChatMessage ol {
+        color: #1f2937 !important;
+    }
+    
+    .stChatMessage li {
+        color: #1f2937 !important;
+    }
+    
+    .stChatMessage span {
+        color: #1f2937 !important;
     }
     
     .stChatMessage:hover {
@@ -159,6 +206,25 @@ st.markdown("""
     /* ==================== SIDEBAR ==================== */
     .stSidebar {
         background: linear-gradient(180deg, #f9fafb 0%, white 100%);
+    }
+    
+    .stSidebar h3 {
+        color: var(--primary);
+        font-size: 0.95rem;
+        font-weight: 600;
+        margin-top: 1rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .stSidebar p, .stSidebar li {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        color: var(--text-primary);
+    }
+    
+    .stSidebar strong {
+        color: var(--primary);
+        font-weight: 600;
     }
     
     .sidebar-section {
@@ -235,11 +301,13 @@ st.markdown("""
         border-radius: 8px;
         margin-bottom: 1rem;
         font-size: 0.95rem;
+        line-height: 1.6;
     }
     
     .info-box h3 {
         margin: 0 0 0.75rem 0;
         font-size: 1rem;
+        color: var(--primary);
     }
     
     .info-box ul {
@@ -250,6 +318,7 @@ st.markdown("""
     
     .info-box li {
         margin-bottom: 0.5rem;
+        line-height: 1.5;
     }
     
     .info-box strong {
@@ -261,6 +330,17 @@ st.markdown("""
         .main {
             padding-left: 0.75rem;
             padding-right: 0.75rem;
+        }
+        
+        .stSidebar h3 {
+            font-size: 0.9rem;
+            margin-top: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stSidebar p, .stSidebar li {
+            font-size: 0.85rem;
+            line-height: 1.4;
         }
         
         .header-container {
@@ -309,6 +389,51 @@ st.markdown("""
             padding-top: 0.25rem;
         }
         
+        .stSidebar {
+            padding: 0.75rem;
+        }
+        
+        .stSidebar h3 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin: 1.25rem 0 0.75rem 0;
+            color: var(--primary);
+        }
+        
+        .stSidebar h3:first-child {
+            margin-top: 0;
+        }
+        
+        .stSidebar p, .stSidebar li {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: var(--text-primary);
+        }
+        
+        .stSidebar strong {
+            font-size: 0.9rem;
+        }
+        
+        .stMetric {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            margin-bottom: 0.75rem;
+        }
+        
+        .stMetricLabel {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+        
+        .stMetricValue {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
         .header-container {
             padding: 1.5rem 1rem;
             margin-bottom: 0.75rem;
@@ -346,6 +471,23 @@ st.markdown("""
             padding: 0.75rem 0.9rem;
             border-radius: 8px;
             font-size: 0.9rem;
+            color: #1f2937;
+        }
+        
+        .stChatMessage p {
+            color: #1f2937 !important;
+            font-size: 0.9rem !important;
+            line-height: 1.6 !important;
+        }
+        
+        .stChatMessage strong {
+            color: #1e3a8a !important;
+            font-weight: 700 !important;
+        }
+        
+        .stChatMessage li {
+            color: #1f2937 !important;
+            font-size: 0.9rem !important;
         }
         
         .stChatInputContainer {
@@ -388,6 +530,19 @@ st.markdown("""
         
         .info-box li {
             margin-bottom: 0.25rem;
+            line-height: 1.4;
+        }
+        
+        .info-box p {
+            font-size: 0.85rem;
+            line-height: 1.5;
+            margin: 0.5rem 0;
+        }
+        
+        .info-box strong {
+            display: block;
+            margin-top: 0.75rem;
+            font-size: 0.85rem;
         }
         
         .error-box {
@@ -519,11 +674,11 @@ try:
     with col2:
         st.markdown("""
         <div class="header-container" style="background: linear-gradient(135deg, #065f46 0%, #059669 100%); display: flex; flex-direction: column; justify-content: center;">
-            <div class="status-badge">
+            <div class="status-badge" style="background: rgba(255, 255, 255, 0.2); color: #ffffff;">
                 <div class="status-dot"></div>
                 Agent Connected
             </div>
-            <div style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">
+            <div style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.95; color: #ffffff;">
                 <strong>Ready to assist</strong><br>
                 Ask market research questions
             </div>
@@ -544,7 +699,7 @@ except:
 
 
 # =========================
-# SIDEBAR
+# SIDEBAR - RESPONSIVE
 # =========================
 with st.sidebar:
     st.markdown("### 🎯 Guide")
@@ -564,11 +719,14 @@ with st.sidebar:
     st.divider()
     
     st.markdown("### 📊 Session Info")
-    col1, col2 = st.columns(2)
-    with col1:
+    
+    # Metrics - responsive without columns
+    metrics_col1, metrics_col2 = st.columns([1, 1], gap="small")
+    with metrics_col1:
         st.metric("Messages", len(st.session_state.messages))
-    with col2:
-        st.metric("Duration", "0:00" if not st.session_state.messages else "Active")
+    with metrics_col2:
+        status_text = "0:00" if not st.session_state.messages else "Active"
+        st.metric("Status", status_text)
     
     st.divider()
     
@@ -600,23 +758,21 @@ st.markdown("---")
 chat_container = st.container()
 with chat_container:
     if not st.session_state.messages:
-        col1, col2, col3 = st.columns([1, 2, 1])
-        with col2:
-            st.markdown("""
-            <div class="info-box">
-                <h3 style="margin-top: 0;">👋 Welcome to RPX Market Validation Agent</h3>
-                <p>
+        st.markdown("""
+        <div class="info-box">
+            <h3 style="margin-top: 0;">👋 Welcome to RPX Market Validation Agent</h3>
+            <p style="line-height: 1.5; margin: 0.75rem 0;">
                 Start a conversation by asking questions about market research, 
                 customer validation, competitive analysis, or market trends.
-                </p>
-                <strong>Try asking:</strong>
-                <ul>
-                    <li>"What are the key market segments?"</li>
-                    <li>"How do we validate customer demand?"</li>
-                    <li>"What's the competitive landscape?"</li>
-                </ul>
-            </div>
-            """, unsafe_allow_html=True)
+            </p>
+            <strong style="display: block; margin-top: 1rem;">Try asking:</strong>
+            <ul style="margin-top: 0.5rem; line-height: 1.6;">
+                <li>"What are the key market segments?"</li>
+                <li>"How do we validate customer demand?"</li>
+                <li>"What's the competitive landscape?"</li>
+            </ul>
+        </div>
+        """, unsafe_allow_html=True)
     else:
         for i, message in enumerate(st.session_state.messages):
             with st.chat_message(
