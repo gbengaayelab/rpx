@@ -302,27 +302,38 @@ st.markdown("""
         margin-bottom: 1rem;
         font-size: 0.95rem;
         line-height: 1.6;
+        color: #1f2937;
     }
     
     .info-box h3 {
         margin: 0 0 0.75rem 0;
         font-size: 1rem;
-        color: var(--primary);
+        color: #1e3a8a;
+        font-weight: 700;
+    }
+    
+    .info-box p {
+        color: #1f2937 !important;
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
     }
     
     .info-box ul {
         margin: 0;
         padding-left: 1.5rem;
         font-size: 0.9rem;
+        color: #1f2937;
     }
     
     .info-box li {
         margin-bottom: 0.5rem;
         line-height: 1.5;
+        color: #1f2937 !important;
     }
     
     .info-box strong {
-        color: var(--primary);
+        color: #1e3a8a;
+        font-weight: 700;
     }
     
     /* ==================== TABLET (iPad) - 768px ==================== */
@@ -330,6 +341,18 @@ st.markdown("""
         .main {
             padding-left: 0.75rem;
             padding-right: 0.75rem;
+        }
+        
+        .info-box {
+            color: #1f2937;
+        }
+        
+        .info-box h3 {
+            color: #1e3a8a;
+        }
+        
+        .info-box p, .info-box li {
+            color: #1f2937 !important;
         }
         
         .stSidebar h3 {
@@ -516,33 +539,41 @@ st.markdown("""
         .info-box {
             padding: 0.75rem;
             border-left-width: 3px;
+            color: #1f2937;
         }
         
         .info-box h3 {
             font-size: 0.9rem;
             margin-bottom: 0.5rem;
-        }
-        
-        .info-box ul {
-            font-size: 0.8rem;
-            padding-left: 1rem;
-        }
-        
-        .info-box li {
-            margin-bottom: 0.25rem;
-            line-height: 1.4;
+            color: #1e3a8a;
+            font-weight: 700;
         }
         
         .info-box p {
             font-size: 0.85rem;
             line-height: 1.5;
             margin: 0.5rem 0;
+            color: #1f2937 !important;
+        }
+        
+        .info-box ul {
+            font-size: 0.8rem;
+            padding-left: 1rem;
+            color: #1f2937;
+        }
+        
+        .info-box li {
+            margin-bottom: 0.25rem;
+            line-height: 1.4;
+            color: #1f2937 !important;
         }
         
         .info-box strong {
             display: block;
             margin-top: 0.75rem;
             font-size: 0.85rem;
+            color: #1e3a8a;
+            font-weight: 700;
         }
         
         .error-box {
